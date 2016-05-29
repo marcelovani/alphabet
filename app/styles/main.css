@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: #2196F3
+}
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+main {
+    padding: 20px
+}
+html,
+body 
+{
+     height: 100%;
+}
+
+#container {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.character {
+    background: red;
+    border: 2px solid white;
+    display: block;
+    float: left;
+    margin: 10px -moz-border-radius: 45px;
+    -webkit-border-radius: 45px;
+    border-radius: 45px;
+    width: 51px;
+    height: 51px;
+    margin: 12px;
+}
+
+.character .inner {
+    color: white;
+    font-size: 20pt;
+    padding: 10px 16px;
+    margin: 0px;
+    display: block;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.character:hover {
+    background: #000000;
+    border: 2px solid #FF0000;
+}
+
+#container.en-gb .character {
+    background: #FF0000;
+}
+
+#container.en-gb .character:hover {
+    background: #FF0000;
+}
+
+#container.pt-br .character {
+    background: #008000;
+}
+
+#container.en-gb .character:hover {
+    background: #008000;
+}
+
+#container.es-es .character {
+    background: #FF0000;
+}
+
+#container.es-es .character:hover {
+    background: #FF0000;
+}
