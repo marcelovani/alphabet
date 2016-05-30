@@ -62,26 +62,26 @@ body
     border: 2px solid #FF0000;
 }
 
-#container.en-gb .character {
-    background: #FF0000;
+body.en-us .character {
+    background: #1022ff;
 }
 
-#container.en-gb .character:hover {
-    background: #FF0000;
+body.en-us .character:hover {
+    background: #2469ff;
 }
 
-#container.pt-br .character {
+body.pt-br .character {
     background: #008000;
 }
 
-#container.en-gb .character:hover {
-    background: #008000;
+body.pt-br .character:hover {
+    background: #73bc36;
 }
 
-#container.es-es .character {
-    background: #FF0000;
+body.es-es .character {
+    background: #ff2500;
 }
 
-#container.es-es .character:hover {
-    background: #FF0000;
+body.es-es .character:hover {
+    background: #ff9202;
 }
