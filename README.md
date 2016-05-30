@@ -4,6 +4,10 @@ A sample web app that lets you use your site as an alphabet.
 
 It demonstrates simple offline usage combined with simple audio looping via web audio.
 
+## Clonning
+
+git clone --recursive https://marcellovani@bitbucket.org/marcellovani/appalphabet.git
+
 ## Installing
 
 Whilst you don't need to use the build process, if you want to host this publically it is recommended
