@@ -45,9 +45,9 @@ body
 }
 
 .close-settings-button {
-    right: 10px;
-    position: absolute;
-    bottom: 10px;
+    float: right;
+    display: inline;
+    margin: 0 5px 7px 0;
 }
 
 #settings .radios .title {
