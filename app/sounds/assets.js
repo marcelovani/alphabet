@@ -39,13 +39,17 @@ var soundsConfig = {
                         "y": [29770, 1000],
                         "z": [31130, 2900]
                     }
-                }
+                },
+		            "marc": {},
+		            "bruna": {}
             }
         },
         "en-GB": {
             "voice": {
                 "john": {},
-                "ann": {}
+                "ann": {},
+		            "marc": {},
+		            "bruna": {}
             }
         },
         "pt-BR": {
@@ -81,13 +85,17 @@ var soundsConfig = {
                         "y": [75500, 1000],
                         "z": [77000, 1000]
                     }
-                }
+                },
+		            "marc": {},
+		            "bruna": {}
             }
         },
         "pt-Pt": {
             "voice": {
                 "john": {},
-                "ann": {}
+                "ann": {},
+		            "marc": {},
+		            "bruna": {}
             }
         },
         "es-ES": {
@@ -123,7 +131,9 @@ var soundsConfig = {
                         "y": [29770, 1000],
                         "z": [31130, 2900]
                     }
-                }
+                },
+		            "marc": {},
+		            "bruna": {}
             }
         }
     }
