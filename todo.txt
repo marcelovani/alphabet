@@ -1,0 +1,4 @@
+Game modes:
+    Spelling: Phone will randomize a word and kid has to spell it
+    Find the letter: Phone will randomize a letter and kid has to find it
+    
