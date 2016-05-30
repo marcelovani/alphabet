@@ -1,15 +1,15 @@
 var soundsConfig = {
     "language": {
         "en-US": {
-            "gender": {
-                "male": {
+            "voice": {
+                "john": {
                     "urls": ["alphabet.mp3"],
                     "sprite": {
                         "a": [0, 1000],
                         "b": [1000, 2000]
                     }
                 },
-                "female": {
+                "ann": {
                     "urls": ["alphabet.mp3"],
                     "sprite": {
                         "a": [600, 900],
@@ -43,15 +43,15 @@ var soundsConfig = {
             }
         },
         "en-GB": {
-            "gender": {
-                "male": {},
-                "female": {}
+            "voice": {
+                "john": {},
+                "ann": {}
             }
         },
         "pt-BR": {
-            "gender": {
-                "male": {},
-                "female": {
+            "voice": {
+                "john": {},
+                "ann": {
                     "urls": ["alphabet.mp3"],
                     "sprite": {
                         "a": [280, 700],
@@ -85,15 +85,15 @@ var soundsConfig = {
             }
         },
         "pt-Pt": {
-            "gender": {
-                "male": {},
-                "female": {}
+            "voice": {
+                "john": {},
+                "ann": {}
             }
         },
         "es-ES": {
-            "gender": {
-                "male": {},
-                "female": {
+            "voice": {
+                "john": {},
+                "ann": {
                     "urls": ["alphabet.mp3"],
                     "sprite": {
                         "a": [2869, 2467],
