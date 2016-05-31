@@ -47,20 +47,18 @@ body
 
 #picture .picture-wrapper {
     position: relative;
-    float: left;
-    display: block;
-    width: 100%;
-    clear: right;
+    margin-top: 50px;
 }
 
 #picture .caption {
-    font-size: 26px;
+    font-size: 30px;
     font-family: arial;
-    color: white;
     text-align: center;
-    display: block;
-    margin: 0 0 15px 0;
     text-transform: capitalize;
+    display: block;
+    color: wheat;
+    width: 100%;
+    margin-top: 45px;
 }
 
 #picture .ui-btn {

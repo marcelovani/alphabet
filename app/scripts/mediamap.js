@@ -3,7 +3,16 @@ var mediaMapJson = {
 		"en-US": {
 			"voice": {
 				"john": {},
-				"ann": {},
+				"ann": {
+					"e": [
+						{
+							"word": "elephant",
+							"spoken": "elephant.mp3",
+							"effect": "elephant.mp3",
+							"picture": "elephant.jpg"
+						}
+					]
+				},
 				"marc": {},
 				"bruna": {}
 			}
