@@ -17,6 +17,42 @@ body
      height: 100%;
 }
 
+#picture {
+    background: black;
+    opacity: 0.8;
+    display: none;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 900;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#picture .preview {
+    margin-top: 45px;
+    width: 100%;
+    min-height: 150px;
+    border: 2px solid gray;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#picture .ui-btn {
+    width: 200px;
+    margin: 0 auto;
+    background: red;
+    color: white;
+}
+
 #settings {
     background: lightgray;
     display: none;
