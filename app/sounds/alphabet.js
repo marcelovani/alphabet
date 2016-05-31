@@ -1,4 +1,4 @@
-var soundsConfig = {
+var alphabetJson = {
     "language": {
         "en-US": {
             "voice": {

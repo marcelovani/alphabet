@@ -1,16 +1,18 @@
-body, #container {
-    margin: 0;
-    background-color: #2196F3
-}
 * {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
 }
+body, #container {
+    margin: 0;
+    background-color: #2196F3
+}
+
 main {
     padding: 20px
 }
+
 html,
 body 
 {
@@ -19,7 +21,7 @@ body
 
 #picture {
     background: black;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
     display: none;
     height: 100%;
     -webkit-box-align: center;
@@ -37,13 +39,28 @@ body
     top: 0;
 }
 
-#picture .preview {
-    margin-top: 45px;
-    width: 100%;
-    min-height: 150px;
-    border: 2px solid gray;
+#picture img {
+    width: 98%;
+    position: absolute;
+    margin: 0 2px;
+}
+
+#picture .picture-wrapper {
+    position: relative;
+    float: left;
     display: block;
-    margin-bottom: 20px;
+    width: 100%;
+    clear: right;
+}
+
+#picture .caption {
+    font-size: 26px;
+    font-family: arial;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 0 15px 0;
+    text-transform: capitalize;
 }
 
 #picture .ui-btn {
