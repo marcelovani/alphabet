@@ -35,6 +35,12 @@ var mediaMapJson = {
 							"spoken": "abelha.mp3",
 							"effect": "bee.mp3",
 							"picture": "bee.jpg"
+						},
+						{
+							"word": "airplane",
+							"spoken": "airplane.mp3",
+							"effect": "airplane.mp3",
+							"picture": "airplane.jpg"
 						}
 					],
 					"e": [
