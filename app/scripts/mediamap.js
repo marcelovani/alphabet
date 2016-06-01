@@ -10,6 +10,12 @@ var mediaMapJson = {
 							"spoken": "airplane.mp3",
 							"effect": "airplane.mp3",
 							"picture": "airplane.jpg"
+						},
+						{
+							"word": "aligator",
+							"spoken": "aligator.mp3",
+							"effect": "aligator.mp3",
+							"picture": "aligator.jpg"
 						}
 					],
 					"b": [
@@ -152,6 +158,26 @@ var mediaMapJson = {
 							"spoken": "fire-truck.mp3",
 							"effect": "fire-truck.mp3",
 							"picture": "fire-truck.jpg"
+						},
+						{
+							"word": "frog",
+							"spoken": "frog.mp3",
+							"effect": "frog.mp3",
+							"picture": "frog.jpg"
+						}
+					],
+					"g": [
+						{
+							"word": "goal",
+							"spoken": "goal.mp3",
+							"effect": "goal.mp3",
+							"picture": "goal.jpg"
+						},
+						{
+							"word": "guitar",
+							"spoken": "guitar.mp3",
+							"effect": "guitar.mp3",
+							"picture": "guitar.jpg"
 						}
 					],
 					"h": [
@@ -172,6 +198,30 @@ var mediaMapJson = {
 							"spoken": "horse.mp3",
 							"effect": "horse.mp3",
 							"picture": "horse.jpg"
+						}
+					],
+					"i": [
+						{
+							"word": "indian",
+							"spoken": "indian.mp3",
+							"effect": "indian.mp3",
+							"picture": "indian.jpg"
+						}
+					],
+					"j": [
+						{
+							"word": "jet",
+							"spoken": "jet.mp3",
+							"effect": "jet.mp3",
+							"picture": "jet.jpg"
+						}
+					],
+					"k": [
+						{
+							"word": "kart",
+							"spoken": "kart.mp3",
+							"effect": "kart.mp3",
+							"picture": "kart.jpg"
 						}
 					],
 					"l": [
@@ -208,6 +258,14 @@ var mediaMapJson = {
 							"picture": "motorcycle.jpg"
 						}
 					],
+					"n": [
+						{
+							"word": "nose",
+							"spoken": "nose.mp3",
+							"effect": "nose.mp3",
+							"picture": "nose.jpg"
+						}
+					],
 					"o": [
 						{
 							"word": "owl",
@@ -228,6 +286,20 @@ var mediaMapJson = {
 							"spoken": "pig.mp3",
 							"effect": "pig.mp3",
 							"picture": "pig.jpg"
+						},
+						{
+							"word": "pirate",
+							"spoken": "pirate.mp3",
+							"effect": "pirate.mp3",
+							"picture": "pirate.jpg"
+						}
+					],
+					"q": [
+						{
+							"word": "quiet",
+							"spoken": "quiet.mp3",
+							"effect": "quiet.mp3",
+							"picture": "quiet.jpg"
 						}
 					],
 					"r": [
@@ -245,6 +317,12 @@ var mediaMapJson = {
 						}
 					],
 					"s": [
+						{
+							"word": "seal",
+							"spoken": "seal.mp3",
+							"effect": "seal.mp3",
+							"picture": "seal.jpg"
+						},
 						{
 							"word": "seagull",
 							"spoken": "seagull.mp3",
@@ -268,6 +346,12 @@ var mediaMapJson = {
 							"spoken": "snake.mp3",
 							"effect": "snake.mp3",
 							"picture": "snake.jpg"
+						},
+						{
+							"word": "ship",
+							"spoken": "ship.mp3",
+							"effect": "ship.mp3",
+							"picture": "ship.jpg"
 						}
 					],
 					"t": [
@@ -290,10 +374,10 @@ var mediaMapJson = {
 							"picture": "train.jpg"
 						},
 						{
-							"word": "traktor",
-							"spoken": "traktor.mp3",
-							"effect": "traktor.mp3",
-							"picture": "traktor.jpg"
+							"word": "tractor",
+							"spoken": "tractor.mp3",
+							"effect": "tractor.mp3",
+							"picture": "tractor.jpg"
 						},
 						{
 							"word": "truck",
@@ -302,7 +386,21 @@ var mediaMapJson = {
 							"picture": "truck.jpg"
 						}
 					],
+					"u": [
+						{
+							"word": "ukulele",
+							"spoken": "ukulele.mp3",
+							"effect": "ukulele.mp3",
+							"picture": "ukulele.jpg"
+						}
+					],
 					"v": [
+						{
+							"word": "violin",
+							"spoken": "violin.mp3",
+							"effect": "violin.mp3",
+							"picture": "violin.jpg"
+						},
 						{
 							"word": "vacuum cleaner",
 							"spoken": "vacuum cleaner.mp3",
@@ -316,6 +414,42 @@ var mediaMapJson = {
 							"spoken": "wolf.mp3",
 							"effect": "wolf.mp3",
 							"picture": "wolf.jpg"
+						},
+						{
+							"word": "windsurf",
+							"spoken": "windsurf.mp3",
+							"effect": "windsurf.mp3",
+							"picture": "windsurf.jpg"
+						},
+						{
+							"word": "whale",
+							"spoken": "whale.mp3",
+							"effect": "whale.mp3",
+							"picture": "whale.jpg"
+						}
+					],
+					"x": [
+						{
+							"word": "xylophone",
+							"spoken": "xylophone.mp3",
+							"effect": "xylophone.mp3",
+							"picture": "xylophone.jpg"
+						}
+					],
+					"y": [
+						{
+							"word": "yoga",
+							"spoken": "yoga.mp3",
+							"effect": "yoga.mp3",
+							"picture": "yoga.jpg"
+						}
+					],
+					"z": [
+						{
+							"word": "zebra",
+							"spoken": "zebra.mp3",
+							"effect": "zebra.mp3",
+							"picture": "zebra.jpg"
 						}
 					]
 				},
@@ -397,6 +531,12 @@ var mediaMapJson = {
 							"spoken": "bombeiro.mp3",
 							"effect": "fire-truck.mp3",
 							"picture": "fire-truck.jpg"
+						},
+						{
+							"word": "baleia",
+							"spoken": "baleia.mp3",
+							"effect": "whale.mp3",
+							"picture": "whale.jpg"
 						}
 					],
 					"c": [
@@ -466,7 +606,12 @@ var mediaMapJson = {
 						}
 					],
 					"f": [
-
+						{
+							"word": "foca",
+							"spoken": "foca.mp3",
+							"effect": "seal.mp3",
+							"picture": "seal.jpg"
+						}
 					],
 					"g": [
 						{
@@ -492,15 +637,56 @@ var mediaMapJson = {
 							"spoken": "gaivota.mp3",
 							"effect": "seagull.mp3",
 							"picture": "seagull.jpg"
+						},
+						{
+							"word": "gol",
+							"spoken": "gol.mp3",
+							"effect": "goal.mp3",
+							"picture": "goal.jpg"
+						},
+						{
+							"word": "guitarra",
+							"spoken": "guitarra.mp3",
+							"effect": "guitar.mp3",
+							"picture": "guitar.jpg"
 						}
 					],
 					"h": [
-						,
 						{
 							"word": "helicóptero",
 							"spoken": "helicoptero.mp3",
 							"effect": "helicopter.mp3",
 							"picture": "helicopter.jpg"
+						}
+					],
+					"i": [
+						{
+							"word": "índio",
+							"spoken": "indio.mp3",
+							"effect": "indian.mp3",
+							"picture": "indian.jpg"
+						}
+					],
+					"j": [
+						{
+							"word": "jacaré",
+							"spoken": "jacare.mp3",
+							"effect": "aligator.mp3",
+							"picture": "aligator.jpg"
+						},
+						{
+							"word": "jato",
+							"spoken": "jato.mp3",
+							"effect": "jet.mp3",
+							"picture": "jet.jpg"
+						}
+					],
+					"k": [
+						{
+							"word": "kart",
+							"spoken": "kart.mp3",
+							"effect": "kart.mp3",
+							"picture": "kart.jpg"
 						}
 					],
 					"l": [
@@ -555,6 +741,20 @@ var mediaMapJson = {
 							"picture": "motorcycle.jpg"
 						}
 					],
+					"n": [
+						{
+							"word": "navio",
+							"spoken": "navio.mp3",
+							"effect": "ship.mp3",
+							"picture": "ship.jpg"
+						},
+						{
+							"word": "nariz",
+							"spoken": "nariz.mp3",
+							"effect": "nose.mp3",
+							"picture": "nose.jpg"
+						}
+					],
 					"o": [
 						{
 							"word": "ovelha",
@@ -587,6 +787,20 @@ var mediaMapJson = {
 							"spoken": "porco.mp3",
 							"effect": "pig.mp3",
 							"picture": "pig.jpg"
+						},
+						{
+							"word": "pirata",
+							"spoken": "pirata.mp3",
+							"effect": "pirate.mp3",
+							"picture": "pirate.jpg"
+						}
+					],
+					"q": [
+						{
+							"word": "quieto",
+							"spoken": "quieto.mp3",
+							"effect": "quiet.mp3",
+							"picture": "quiet.jpg"
 						}
 					],
 					"r": [
@@ -603,6 +817,12 @@ var mediaMapJson = {
 							"spoken": "sino.mp3",
 							"effect": "bell.mp3",
 							"picture": "bell.jpg"
+						},
+						{
+							"word": "sapo",
+							"spoken": "sapo.mp3",
+							"effect": "frog.mp3",
+							"picture": "frog.jpg"
 						}
 					],
 					"t": [
@@ -627,8 +847,8 @@ var mediaMapJson = {
 						{
 							"word": "trator",
 							"spoken": "trator.mp3",
-							"effect": "traktor.mp3",
-							"picture": "traktor.jpg"
+							"effect": "tractor.mp3",
+							"picture": "tractor.jpg"
 						}
 					],
 					"u": [
@@ -651,14 +871,44 @@ var mediaMapJson = {
 							"spoken": "vaca.mp3",
 							"effect": "cow.mp3",
 							"picture": "cow.jpg"
+						},
+						{
+							"word": "violino",
+							"spoken": "violino.mp3",
+							"effect": "violin.mp3",
+							"picture": "violin.jpg"
+						}
+					],
+					"w": [
+						{
+							"word": "windsurf",
+							"spoken": "windsurf.mp3",
+							"effect": "windsurf.mp3",
+							"picture": "windsurf.jpg"
 						}
 					],
 					"x": [
 						{
-							/*"word": "x",
-							 "spoken": "x.mp3",
-							 "effect": "x.mp3",
-							 "picture": "x.jpg"*/
+							"word": "xilofone",
+							"spoken": "xilofone.mp3",
+							"effect": "xylophone.mp3",
+							"picture": "xylophone.jpg"
+						}
+					],
+					"y": [
+						{
+							"word": "yoga",
+							 "spoken": "yoga.mp3",
+							 "effect": "yoga.mp3",
+							 "picture": "yoga.jpg"
+						}
+					],
+					"z": [
+						{
+							"word": "zebra",
+							"spoken": "zebra.mp3",
+							"effect": "zebra.mp3",
+							"picture": "zebra.jpg"
 						}
 					]
 				},
