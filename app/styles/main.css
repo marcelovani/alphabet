@@ -1,186 +1,205 @@
 * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
 }
+
 body, #container {
-    margin: 0;
-    background-color: #2196F3
+  margin: 0;
+  background-color: #2196F3
 }
 
 main {
-    padding: 20px
+  padding: 20px
 }
 
 html,
-body 
-{
-     height: 100%;
+body {
+  height: 100%;
+}
+
+.outline {
+  color: black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #picture {
-    background: black;
-    /*opacity: 0.8;*/
-    display: none;
-    height: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 900;
-    width: 100%;
-    position: absolute;
-    top: 0;
+  background: #2196F3;
+  /*opacity: 0.8;*/
+  display: none;
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 900;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 #picture img {
-    width: 98%;
-    position: absolute;
-    margin: 0 2px;
+  width: 98%;
+  position: absolute;
+  margin: 0 2px;
 }
 
 #picture .picture-wrapper {
-    position: relative;
-    margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 }
 
 #picture .caption {
-    font-size: 30px;
-    font-family: arial;
-    text-align: center;
-    text-transform: capitalize;
-    display: block;
-    color: wheat;
-    width: 100%;
-    margin-top: 45px;
+  font-size: 30px;
+  font-family: arial;
+  text-align: center;
+  text-transform: capitalize;
+  display: block;
+  color: white;
+  width: 100%;
+  margin-top: 45px;
 }
 
 #picture .ui-btn {
-    width: 200px;
-    margin: 0 auto;
-    background: red;
-    color: white;
+  width: 200px;
+  margin: 0 auto;
+  background: red;
+  color: white;
 }
 
 #settings {
-    background: lightgray;
-    display: none;
-    height: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 1000;
-    /*background: black;
-    color: white;*/
-    width: 100%;
+  background: lightgray;
+  display: none;
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  /*background: black;
+  color: white;*/
+  width: 100%;
 }
 
 .setting-button {
-    height: 40px;
-    margin: 12px;
-    right: 10px;
-    position: absolute;
-    bottom: 10px;
+  height: 40px;
+  margin: 12px;
+  right: 10px;
+  position: absolute;
+  bottom: 10px;
 }
 
 .close-settings-button {
-    float: right;
-    display: inline;
-    margin: 0 5px 7px 0;
+  float: right;
+  display: inline;
+  margin: 0 5px 7px 0;
 }
 
 #settings .radios .title {
-    margin: 5px;
-    vertical-align: -webkit-baseline-middle;
+  margin: 5px;
+  vertical-align: -webkit-baseline-middle;
 }
 
 #settings .ui-radio .flag-icon {
-    vertical-align: super;
+  vertical-align: super;
 }
 
 .flag-icon {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 #container {
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    flex-direction: column;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .character {
-    border: 2px solid white;
-    display: block;
-    float: left;
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
-    border-radius: 45px;
-    width: 62px;
-    height: 62px;
-    margin: 5px 7px;
-    background: #008000;
-    color: white;
-    font-size: 27px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 61px;
+  border: 2px solid white;
+  display: block;
+  float: left;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+  width: 62px;
+  height: 62px;
+  margin: 5px 7px;
+  background: #008000;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 61px;
 }
 
 .character:hover {
-/*    background: #000000;*/
-    /*border: 2px solid #FF0000;*/
+  /*    background: #000000;*/
+  /*border: 2px solid #FF0000;*/
 }
 
 body .character:hover {
-    /*background: #cecece;*/
+  /*background: #cecece;*/
 }
 
 body.en-us #container {
-/*
-    background: #1022ff;
-*/
+  /*
+      background: #1022ff;
+  */
 }
 
 body.en-us .character:hover {
- /*   background: #2469ff;*/
+  /*   background: #2469ff;*/
 }
 
 body.pt-br #container {
-/*    background: #008000;*/
+  /*    background: #008000;*/
 }
 
 body.es-es #container {
-/*
-    background: #ff2500;
-*/
+  /*
+      background: #ff2500;
+  */
 }
 
-.c1 { background: #FFD700; }
-.c2 { background: #0000CD; }
-.c3 { background: #FF0000; }
-.c4 { background: #FF8C00; }
-.c5 { background: #FF00FF; }
+.c1 {
+  background: #FFD700;
+}
+
+.c2 {
+  background: #0000CD;
+}
+
+.c3 {
+  background: #FF0000;
+}
+
+.c4 {
+  background: #FF8C00;
+}
+
+.c5 {
+  background: #FF00FF;
+}
