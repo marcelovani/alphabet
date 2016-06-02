@@ -5,3 +5,5 @@ Game modes:
 
 Enable caching (if possible using workers, otherwise usual caching)
 Use grunt to build dependencies, dont commit libs on repo
+Normalize audios
+
