@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# 2016-06-02 v1.0.0
+
+lib/flag-icon-css/css/flag-icon.min.css
+lib/jquery_mobile/jquery.mobile-1.4.5.min.css
+styles/main.css
+
+lib/jquery/jquery-2.2.4.min.js
+lib/jquery_mobile/jquery.mobile-1.4.5.min.js
+lib/howler/howler.min.js
+sounds/alphabet.js
+scripts/mediamap.js
+scripts/main.min.js
+
+NETWORK:
+index.php
+
+FALLBACK:
+/html/ /offline.html
