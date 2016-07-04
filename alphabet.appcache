@@ -5,7 +5,7 @@ NETWORK:
 *
 
 FALLBACK:
-/html/ /offline.html
+/html/ ./offline.html
 
 CACHE:
 ./index.html
