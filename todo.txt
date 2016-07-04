@@ -1,9 +1,0 @@
-Game modes:
-    Spelling: Phone will randomize a word and kid has to spell it
-    Find the letter: Phone will randomize a letter and kid has to find it
-    Show the image and 3 letters to choose from
-
-Enable caching (if possible using workers, otherwise usual caching)
-Use grunt to build dependencies, dont commit libs on repo
-Normalize audios
-
