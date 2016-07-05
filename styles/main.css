@@ -55,6 +55,16 @@ body {
   margin-top: 50px;
 }
 
+#picture .caption-wrapper {
+  float: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 290px;
+  width: 100%;
+  text-align: center;
+}
+
 #picture .caption {
   font-size: 30px;
   font-family: arial;
@@ -63,7 +73,16 @@ body {
   display: block;
   color: white;
   width: 100%;
-  margin-top: 45px;
+  margin-top: 5px;
+}
+
+#picture .big-letter {
+  display: block;
+  width: 164px;
+  font-size: 185px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 170px;
 }
 
 #picture .ui-btn {

@@ -1,16 +1,4 @@
 var items = [
-  './',
-  './index.html',
-  './index.html?homescreen=1',
-  './?homescreen=1',
-  './lib/flag-icon-css/css/flag-icon.min.css',
-  './lib/howler/howler.min.js',
-  './lib/jquery/jquery-2.2.4.min.js',
-  './lib/jquery_mobile/jquery.mobile-1.4.5.min.css',
-  './scripts/main.min.js',
-  './mediamap.json',
-  './sounds/alphabet.js',
-  './styles/main.css',
   
 './sounds/effects/airplane.mp3',
 './images/pictures/airplane.jpg',
@@ -159,6 +147,18 @@ var items = [
 './images/pictures/elephant.jpg',
 './sounds/effects/door.mp3',
 './images/pictures/door.jpg',
+  './',
+  './index.html',
+  './index.html?homescreen=1',
+  './?homescreen=1',
+  './lib/flag-icon-css/css/flag-icon.min.css',
+  './lib/howler/howler.min.js',
+  './lib/jquery/jquery-2.2.4.min.js',
+  './lib/jquery_mobile/jquery.mobile-1.4.5.min.css',
+  './scripts/main.min.js',
+  './mediamap.json',
+  './sounds/alphabet.js',
+  './styles/main.css'
 ];
 //console.log(items);
 self.addEventListener('install', e => {

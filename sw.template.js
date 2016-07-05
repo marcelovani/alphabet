@@ -1,4 +1,5 @@
 var items = [
+  /*items-placeholder*/
   './',
   './index.html',
   './index.html?homescreen=1',
@@ -9,9 +10,10 @@ var items = [
   './lib/jquery_mobile/jquery.mobile-1.4.5.min.css',
   './scripts/main.min.js',
   './mediamap.json',
-  './sounds/alphabet.js',
+  './sounds/alphabet.json',
   './styles/main.css',
-  /*items-placeholder*/
+  './styles/landscape.css',
+  './styles/portrait.css'
 ];
 //console.log(items);
 self.addEventListener('install', e => {

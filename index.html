@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="./lib/flag-icon-css/css/flag-icon.min.css">
 	<link rel="stylesheet" href="./lib/jquery_mobile/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="./styles/portrait.css">
+	<link rel="stylesheet" media="all and (orientation:landscape)" href="./styles/landscape.css">
 
 	<script src=./lib/jquery/jquery-2.2.4.min.js></script>
 	<script src=./lib/jquery_mobile/jquery.mobile-1.4.5.min.js></script>
@@ -33,7 +35,7 @@
 <body>
 <script>
   if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js', { scope: '/' })
+    navigator.serviceWorker.register('./sw.js', { scope: '/alphabet' })
       .then(function(registration) {
          console.log('Service Worker Registered');
       });
@@ -48,10 +50,13 @@
 		<span class="setting-button ui-icon-gear ui-btn-icon-right"></span>
 	</div>
 	<div id="picture">
-		<span class="caption outline"></span>
 		<div class="picture-wrapper">
 			<span class="preview"><img src=""/></span>
 			<span class="frame"><img src="images/frame-blue.png"/></span>
+		</div>
+		<div class="caption-wrapper">
+			<span class="big-letter outline">A</span>
+			<span class="caption outline"></span>
 		</div>
 		<!--<button class="ui-btn ui-btn-corner-all back">Back</button>-->
 	</div>
