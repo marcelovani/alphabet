@@ -157,8 +157,10 @@ var items = [
   './lib/jquery_mobile/jquery.mobile-1.4.5.min.css',
   './scripts/main.min.js',
   './mediamap.json',
-  './sounds/alphabet.js',
-  './styles/main.css'
+  './sounds/alphabet.json',
+  './styles/main.css',
+  './styles/landscape.css',
+  './styles/portrait.css'
 ];
 //console.log(items);
 self.addEventListener('install', e => {
