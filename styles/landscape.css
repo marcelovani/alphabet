@@ -1,11 +1,3 @@
-#caption-wrapper {
-  float: right;
-  width: 134px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 #picture .caption {
   margin-top: 18px;
   display: block;
