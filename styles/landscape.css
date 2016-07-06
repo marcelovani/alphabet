@@ -27,3 +27,7 @@
   line-height: 170px;
   text-align: center;
 }
+
+.setting-button {
+  bottom: 10px;
+}

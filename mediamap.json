@@ -69,9 +69,9 @@
 						},
 						{
 							"word": "bycicle",
-							"spoken": "bycicle.mp3",
-							"effect": "bycicle.mp3",
-							"picture": "bycicle.jpg"
+							"spoken": "bicycle.mp3",
+							"effect": "bicycle.mp3",
+							"picture": "bicycle.jpg"
 						}
 					],
 					"c": [
@@ -114,10 +114,10 @@
 					],
 					"d": [
 						{
-							"word": "dinossaur",
-							"spoken": "dinossaur.mp3",
-							"effect": "dinossaur.mp3",
-							"picture": "dinossaur.jpg"
+							"word": "dinosaur",
+							"spoken": "dinosaur.mp3",
+							"effect": "dinosaur.mp3",
+							"picture": "dinosaur.jpg"
 						},
 						{
 							"word": "dog",
@@ -517,8 +517,8 @@
 						{
 							"word": "bicicleta",
 							"spoken": "bicicleta.mp3",
-							"effect": "bycicle.mp3",
-							"picture": "bycicle.jpg"
+							"effect": "bicycle.mp3",
+							"picture": "bicycle.jpg"
 						},
 						{
 							"word": "burro",
@@ -593,8 +593,8 @@
 						{
 							"word": "dinossauro",
 							"spoken": "dinossauro.mp3",
-							"effect": "dinossaur.mp3",
-							"picture": "dinossaur.jpg"
+							"effect": "dinosaur.mp3",
+							"picture": "dinosaur.jpg"
 						}
 					],
 					"e": [
