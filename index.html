@@ -33,7 +33,7 @@
 <body>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js', { scope: '/' })
+    navigator.serviceWorker.register('./sw.js', { scope: '/alphabet/' })
       .then(function(registration) {
          console.log('Service Worker Registered');
       });
