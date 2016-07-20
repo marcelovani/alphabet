@@ -1,3 +1,19 @@
+#main .inner {
+  width: 90%;
+  margin: 0 50px;
+}
+
+#main .logo {
+  width: 50%;
+  float: left;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#main .ui-link:first-child {
+  margin-top: 100px;
+}
+
 #picture .caption {
   margin-top: -15px;
   display: block;
@@ -30,4 +46,8 @@
 
 .setting-button {
   bottom: 10px;
+}
+
+#picture .ui-btn {
+  right: 45px;
 }
