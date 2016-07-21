@@ -117,117 +117,26 @@
 	</div>
 	<div id="settings" data-role="settings" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
 		<div class="inner" data-role="main">
-			<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-			    <label for="select-choice-custom" class="select ui-select">Shipping method:</label>
-			    <div class="ui-select"><a href="#" role="button" id="select-choice-custom-button" aria-haspopup="true" aria-owns="select-choice-custom-menu" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"><span>Express: next day</span></span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span></a>
-			        <select name="select-choice-1" id="select-choice-custom" data-native-menu="false" tabindex="-1">
-			            <option value="standard">Standard: 7 day</option>
-			            <option value="rush">Rush: 3 days</option>
-			            <option value="express">Express: next day</option>
-			            <option value="overnight">Overnight</option>
-			        </select>
-			    </div>
-			</div>
 
-			<label for="select-choice-0" class="select">Shipping method:</label>
-			<select name="select-choice-0" id="select-choice-0" data-native-menu="false">
-			  <option value="standard">Standard: 7 day</option>
-			  <option value="rush">Rush: 3 days</option>
-			  <option value="express">Express: next day</option>
-			  <option value="overnight">Overnight</option>
+			<label for="select-language" class="select">Language:</label>
+			<select name="select-language" id="select-language" data-native-menu="true">
+			  <option value="en-GB">English - GB</option>
+			  <option value="pt-BR" selected="selected">Portuguese - Brazil</option>
+			  <option value="es-ES">Spanish - Spain</option>
 			</select>
 
-			<label for="select-choice-2" class="select">Shipping method:</label>
-			<select name="select-choice-2" id="select-choice-2" data-native-menu="true">
-			  <option value="standard">Standard: 7 day</option>
-			  <option value="rush">Rush: 3 days</option>
-			  <option value="express">Express: next day</option>
-			  <option value="overnight">Overnight</option>
+			<label for="select-person" class="select">Voice:</label>
+			<select name="select-person" id="select-person" data-native-menu="true">
+			  <option value="bruna">Bruna</option>
+			  <option value="marcelo" selected="selected">Marcelo</option>
 			</select>
 
-			<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
-				<div role="heading" class="ui-controlgroup-label">
-					<legend>Language:</legend>
-				</div>
-				<div class="ui-controlgroup-controls ">
-					<div class="ui-radio">
-						<label for="language-pt-br" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="flag-icon flag-icon-br"></span>&nbsp;Portuguese - Brazil</label>
-						<input type="radio" name="language" id="language-pt-br" value="pt-BR" checked="checked">
-					</div>
-					<div class="ui-radio">
-						<label for="language-en-us" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="flag-icon flag-icon-us"></span>&nbsp;English - US</label>
-						<input type="radio" name="language" id="language-en-us" value="en-US">
-					</div>
-					<div class="ui-radio">
-						<label for="language-en-gb" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="flag-icon flag-icon-gb"></span>&nbsp;English - GB</label>
-						<input type="radio" name="language" id="language-en-gb" value="en-GB">
-					</div>
-					<div class="ui-radio">
-						<label for="language-es-es" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="flag-icon flag-icon-es"></span>&nbsp;Spanish - Spain</label>
-						<input type="radio" name="language" id="language-es-es" value="es-ES">
-					</div>
-				</div>
-			</fieldset>
+			<label for="select-characters" class="select">Characters:</label>
+			<select name="select-characters" id="select-characters" data-native-menu="true">
+			  <option value="letters" selected="selected">Letters</option>
+			  <option value="numbers">Numbers</option>
+			</select>
 
-			<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
-				<div role="heading" class="ui-controlgroup-label">
-					<legend>Voice:</legend>
-				</div>
-				<div class="ui-controlgroup-controls ">
-					<div class="ui-radio">
-						<label for="voice-ann" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="ui-icon-user"></span>&nbsp;Ann</label>
-						<input type="radio" name="voice" id="voice-ann" value="ann" checked="checked">
-					</div>
-					<div class="ui-radio">
-						<label for="voice-john" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="ui-icon-user"></span>&nbsp;John</label>
-						<input type="radio" name="voice" id="voice-john" value="john">
-					</div>
-					<div class="ui-radio">
-						<label for="voice-joshua" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="ui-icon-user"></span>&nbsp;Joshua</label>
-						<input type="radio" name="voice" id="voice-joshua" value="joshua">
-					</div>
-					<div class="ui-radio">
-						<label for="voice-marc" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="ui-icon-user"></span>&nbsp;Marc</label>
-						<input type="radio" name="voice" id="voice-marc" value="marc">
-					</div>
-					<div class="ui-radio">
-						<label for="voice-bruna" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="ui-icon-user"></span>&nbsp;Bruna</label>
-						<input type="radio" name="voice" id="voice-bruna" value="bruna">
-					</div>
-					<div class="ui-radio">
-						<label for="voice-lisa" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class="ui-icon-user"></span>&nbsp;Lisa</label>
-						<input type="radio" name="voice" id="voice-lisa" value="lisa">
-					</div>
-				</div>
-			</fieldset>
-
-			<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
-				<div role="heading" class="ui-controlgroup-label">
-					<legend>Characters:</legend>
-				</div>
-				<div class="ui-controlgroup-controls ">
-					<div class="ui-radio">
-						<label for="char-letters" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class=""></span>&nbsp;Letters</label>
-						<input type="radio" name="characters" id="char-letters" value="letters" checked="checked">
-					</div>
-					<div class="ui-radio">
-						<label for="char-numbers" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-							<span class=""></span>&nbsp;Numbers</label>
-						<input type="radio" name="characters" id="char-numbers" value="numbers">
-					</div>
-				</div>
-			</fieldset>
 			<a href="#main" data-role="button" data-rel="settings" data-transition="slide" data-direction="reverse" data-theme="e" data-icon="check" data-iconpos="left" data-inline="false" class="back-button">Ok</a>
 		</div>
 	</div>
