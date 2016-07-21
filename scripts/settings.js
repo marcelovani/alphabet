@@ -35,8 +35,10 @@ $(document).ready(function () {
           ];
           break;
       }
+
       // Clear options.
       $('#select-person').find('option').remove();
+
       // Populate persons.
       $(options).each(function() {
         $('#select-person').append($("<option>").attr('value',this.val).text(this.text));
@@ -44,8 +46,11 @@ $(document).ready(function () {
       $('#select-person').change();
     });
 
-    $('.close-settings-button').touchstart(function () {
+    $('#settings .back-button').touchstart(function () {
       // Save settings.
+      gGame.mainController.setLanguage($('#select-language').val());
+      gGame.mainController.setPerson($('#select-person').val());
+      gGame.setCharacters($('#select-characters').val());
     });
   });
 

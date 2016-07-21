@@ -156,6 +156,7 @@ Game.prototype.run = function() {
       var game = new Game(main);
       game.setCharacters('letters');
       game.run();
+      gGame = game;
     });
   };
 

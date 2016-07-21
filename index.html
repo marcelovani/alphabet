@@ -30,15 +30,7 @@
 	<script src=./lib/howler/howler.min.js></script>
 	<script type="text/javascript">
 	  // Global variables.
-	  var Game = {};
-
-	  //var mediaMapJson = {};
-	  //var alphabetJson = {};
-	  //var language = 'pt-BR';
-	  //var sound = null;
-	  //var spoken = null;
-	  //var effect = null;
-	  //var voice = null;
+	  var gGame = {};
 	  var character_touched = '';
 	</script>
 	<script src=./scripts/settings.js></script>
@@ -117,6 +109,9 @@
 	</div>
 	<div id="settings" data-role="settings" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
 		<div class="inner" data-role="main">
+			<div data-role="header">
+			  <h1>Settings</h1>
+			</div>
 
 			<label for="select-language" class="select">Language:</label>
 			<select name="select-language" id="select-language" data-native-menu="true">
