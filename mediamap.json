@@ -403,7 +403,7 @@
 						},
 						{
 							"word": "vacuum cleaner",
-							"spoken": "vacuum cleaner.mp3",
+							"spoken": "vacuum-cleaner.mp3",
 							"effect": "vacuum.mp3",
 							"picture": "vacuum.jpg"
 						}
@@ -857,7 +857,7 @@
 						},
 						{
 							"word": "vacuum cleaner",
-							"spoken": "vacuum cleaner.mp3",
+							"spoken": "vacuum-cleaner.mp3",
 							"effect": "vacuum.mp3",
 							"picture": "vacuum.jpg"
 						}
@@ -910,8 +910,8 @@
 				"lisa": {
 					"a": [
 						{
-							"word": "airplane",
-							"spoken": "airplane.mp3",
+							"word": "aeroplane",
+							"spoken": "aeroplane.mp3",
 							"effect": "airplane.mp3",
 							"picture": "airplane.jpg"
 						},
@@ -1307,7 +1307,7 @@
 						},
 						{
 							"word": "vacuum cleaner",
-							"spoken": "vacuum cleaner.mp3",
+							"spoken": "vacuum-cleaner.mp3",
 							"effect": "vacuum.mp3",
 							"picture": "vacuum.jpg"
 						}
