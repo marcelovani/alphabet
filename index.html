@@ -28,10 +28,26 @@
 	<script src=./lib/jquery/jquery-2.2.4.min.js></script>
 	<script src=./lib/jquery_mobile/jquery.mobile-1.4.5.min.js></script>
 	<script src=./lib/howler/howler.min.js></script>
+	<script type="text/javascript">
+	  // Global variables.
+	  var Game = {};
+
+	  //var mediaMapJson = {};
+	  //var alphabetJson = {};
+	  //var language = 'pt-BR';
+	  //var sound = null;
+	  //var spoken = null;
+	  //var effect = null;
+	  //var voice = null;
+	  var character_touched = '';
+	</script>
+	<script src=./scripts/settings.js></script>
 	<script src=./scripts/main.min.js></script>
+	<script src=./scripts/play.js></script>
+	<script src=./scripts/sounds.js></script>
 </head>
 <body>
-<script>
+<script type="text/javascript">
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js', { scope: '/alphabet/' })
       .then(function(registration) {

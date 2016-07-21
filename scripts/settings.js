@@ -1,0 +1,7 @@
+/*
+ *  Alphabet
+ */
+
+function Settings() {
+
+}
