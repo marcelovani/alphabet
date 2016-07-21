@@ -6,6 +6,7 @@
   *
   */
 function Game(obj) {
+  this.game = {};
   this.mainController = obj;
   this.soundController = new Sound(this.mainController.language, this.mainController.person);
 }
@@ -94,6 +95,50 @@ Game.prototype.setCharacters = function(type) {
   });
 };
 
+Game.prototype.run = function() {
+  var game = this;
+
+  // Hide image, letter and word before page is shown.
+  $("#picture").on("pagebeforeshow", function(event) {
+    $('#picture .preview img').attr('src', './images/pictures/no-image.jpg'); 
+    $('#picture .big-letter').html('');
+    $('#picture .caption').html('');
+  });
+
+  // Show image and play sounds when page shows.
+  $("#picture").on("pageshow", function(event) {
+     // Override onend().
+    game.mainController.alphabetSound._onend[0] = function () {
+      var picture = game.picture(character_touched);
+      if (picture != false) {
+        $('#picture .big-letter').html(character_touched);
+      }
+    }
+    game.mainController.alphabetSound.play(character_touched.toLowerCase(), function () {
+    });
+
+  });
+
+  $('#picture img').touchstart(function () {
+      //effect.play();
+  });
+
+  $('#picture .caption').touchstart(function () {
+    game.soundController.spoken.play();
+  });
+
+  $('#picture .big-letter').touchstart(function () {
+    var character = $('#picture .big-letter').html();
+    game.word.play(character.toLowerCase());
+  });
+
+  // Picture preview close.
+  $('#picture .back-button').touchstart(function () {
+      character_touched = '';
+      game.soundController.stopAll();
+  });
+};
+
 (function ($) {
   'use strict';
 
@@ -105,68 +150,9 @@ Game.prototype.setCharacters = function(type) {
 
       var game = new Game(main);
       game.setCharacters('letters');
-
-      // Hide image, letter and word before page is shown.
-      $("#picture").on("pagebeforeshow", function(event) {
-        $('#picture .preview img').attr('src', './images/pictures/no-image.jpg'); 
-        $('#picture .big-letter').html('');
-        $('#picture .caption').html('');
-      });
-
-      // Show image and play sounds when page shows.
-      $("#picture").on("pageshow", function(event) {
-         // Override onend().
-        main.alphabetSound._onend[0] = function () {
-          var picture = game.picture(character_touched);
-          if (picture != false) {
-            $('#picture .big-letter').html(character_touched);
-          }
-        }
-        main.alphabetSound.play(character_touched.toLowerCase(), function () {
-        });
-
-      });
-
-      $('#picture img').touchstart(function () {
-          //effect.play();
-      });
-
-      $('#picture .caption').touchstart(function () {
-          spoken.play();
-      });
-
-      $('#picture .big-letter').touchstart(function () {
-        var character = $('#picture .big-letter').html();
-        sound.play(character.toLowerCase());
-      });
-
-      // Picture preview close.
-      $('#picture .back-button').touchstart(function () {
-          character_touched = '';
-          game.soundController.stopAll();
-      });
-
-      $('.close-settings-button').touchstart(function () {
-        // Save settings.
-      });
-
-      $('input:radio').change(
-        function () {
-          switch (this.name) {
-            case 'language':
-              set_language(this.value);
-              break;
-
-            case 'voice':
-              set_voice(this.value);
-              break;
-
-            case 'characters':
-              set_characters(this.value);
-              break;
-          }
-        }
-      );
+      game.run();
+      this.game = game;
+//      console.log(this.game.mainController);
     });
   };
 
