@@ -11,6 +11,20 @@ function Sound(language, person) {
   this.person = person;
 }
 
+Sound.prototype.stopAll = function() {
+  if (typeof this.isFor.stop === "function") {
+    this.isFor.unload();
+  }
+
+  if (typeof this.spoken.stop === "function") {
+    this.spoken.unload();
+  }
+
+  if (typeof this.effect.stop === "function") {
+    this.effect.unload();
+  }
+}
+
 Sound.prototype.playIsFor = function(media) {
   this.isFor = new Howl({
     urls: ['./sounds/' + this.language + '/' + this.person + '/is_for.mp3'],

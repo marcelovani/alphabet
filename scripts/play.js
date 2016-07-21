@@ -43,7 +43,7 @@ Game.prototype.picture = function(character) {
     isFor.play();
   }
 
-  return true;
+  return this.picture;
 };
 
 Game.prototype.setCharacters = function(type) {
@@ -143,9 +143,7 @@ Game.prototype.setCharacters = function(type) {
       // Picture preview close.
       $('#picture .back-button').touchstart(function () {
           character_touched = '';
-          spoken.stop();
-          effect.stop();
-          sound.stop();
+          game.soundController.stopAll();
       });
 
       $('.close-settings-button').touchstart(function () {
