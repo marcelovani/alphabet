@@ -9,6 +9,7 @@ function Game(obj) {
   this.game = {};
   this.mainController = obj;
   this.soundController = new Sound(this.mainController.language, this.mainController.person);
+  this.soundController.setAlphabet(this.mainController.alphabetJson);
 }
 
 Game.prototype.picture = function(character) {
@@ -107,14 +108,17 @@ Game.prototype.run = function() {
 
   // Show image and play sounds when page shows.
   $("#picture").on("pageshow", function(event) {
-     // Override onend().
-    game.mainController.alphabetSound._onend[0] = function () {
-      var picture = game.picture(character_touched);
-      if (picture != false) {
-        $('#picture .big-letter').html(character_touched);
+    // Override onend().
+    game.soundController.alphabet._onend[0] = function () {
+      if (character_touched != '') {
+        var picture = game.picture(character_touched);
+        if (picture != false) {
+          $('#picture .big-letter').html(character_touched);
+          character_touched = '';
+        }
       }
     }
-    game.mainController.alphabetSound.play(character_touched.toLowerCase(), function () {
+    game.soundController.alphabet.play(character_touched.toLowerCase(), function () {
     });
 
   });
@@ -124,17 +128,18 @@ Game.prototype.run = function() {
   });
 
   $('#picture .caption').touchstart(function () {
+    //if (game.soundController.spoken.playing() == false) {
     game.soundController.spoken.play();
   });
 
   $('#picture .big-letter').touchstart(function () {
+    //if (game.soundController.spoken.playing() == false) {
     var character = $('#picture .big-letter').html();
-    game.word.play(character.toLowerCase());
+    game.soundController.alphabet.play(character.toLowerCase());
   });
 
   // Picture preview close.
   $('#picture .back-button').touchstart(function () {
-      character_touched = '';
       game.soundController.stopAll();
   });
 };
@@ -151,8 +156,6 @@ Game.prototype.run = function() {
       var game = new Game(main);
       game.setCharacters('letters');
       game.run();
-      this.game = game;
-//      console.log(this.game.mainController);
     });
   };
 

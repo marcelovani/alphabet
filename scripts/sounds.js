@@ -7,6 +7,7 @@ function Sound(language, person) {
   this.isFor = {};
   this.spoken = {};
   this.effect = {};
+  this.alphabet = {};
   this.language = language;
   this.person = person;
 }
@@ -23,6 +24,20 @@ Sound.prototype.stopAll = function() {
   if (typeof this.effect.stop === "function") {
     this.effect.unload();
   }
+}
+
+Sound.prototype.setAlphabet = function(json) {
+  var sprite = json.language[this.language].voice[this.person].sprite;
+  this.alphabet = new Howl({
+    urls: ['./sounds/' + this.language + '/' + this.person + '/alphabet.mp3'],
+    sprite: sprite,
+    autoplay: false,
+    loop: false,
+    onend: function () {},
+    onloaderror: function () {
+      console.log('Not found ' + sprite)
+    }
+  });
 }
 
 Sound.prototype.playIsFor = function(media) {
