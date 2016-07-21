@@ -4,12 +4,14 @@
 
 function Settings() {
 
-  $('.close-settings-button').touchstart(function () {
-    // Save settings.
-  });
+};
 
-  $('input:radio').change(
+(function ($) {
+  'use strict';
+
+  $('#settings input:radio').change(
     function () {
+          console.log('1');
       switch (this.name) {
         case 'language':
           set_language(this.value);
@@ -26,4 +28,8 @@ function Settings() {
     }
   );
 
-}
+  $('.close-settings-button').touchstart(function () {
+    // Save settings.
+  });
+
+})(jQuery);

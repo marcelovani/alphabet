@@ -117,6 +117,34 @@
 	</div>
 	<div id="settings" data-role="settings" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
 		<div class="inner" data-role="main">
+			<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+			    <label for="select-choice-custom" class="select ui-select">Shipping method:</label>
+			    <div class="ui-select"><a href="#" role="button" id="select-choice-custom-button" aria-haspopup="true" aria-owns="select-choice-custom-menu" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"><span>Express: next day</span></span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span></a>
+			        <select name="select-choice-1" id="select-choice-custom" data-native-menu="false" tabindex="-1">
+			            <option value="standard">Standard: 7 day</option>
+			            <option value="rush">Rush: 3 days</option>
+			            <option value="express">Express: next day</option>
+			            <option value="overnight">Overnight</option>
+			        </select>
+			    </div>
+			</div>
+
+			<label for="select-choice-0" class="select">Shipping method:</label>
+			<select name="select-choice-0" id="select-choice-0" data-native-menu="false">
+			  <option value="standard">Standard: 7 day</option>
+			  <option value="rush">Rush: 3 days</option>
+			  <option value="express">Express: next day</option>
+			  <option value="overnight">Overnight</option>
+			</select>
+
+			<label for="select-choice-2" class="select">Shipping method:</label>
+			<select name="select-choice-2" id="select-choice-2" data-native-menu="true">
+			  <option value="standard">Standard: 7 day</option>
+			  <option value="rush">Rush: 3 days</option>
+			  <option value="express">Express: next day</option>
+			  <option value="overnight">Overnight</option>
+			</select>
+
 			<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
 				<div role="heading" class="ui-controlgroup-label">
 					<legend>Language:</legend>
