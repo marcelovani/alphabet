@@ -10,10 +10,6 @@ body, #container {
   background-color: #2196F3
 }
 
-main {
-  padding: 20px
-}
-
 html,
 body {
   height: 100%;
@@ -24,10 +20,9 @@ body {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-#main, #picture, #settings {
+#main, #picture, #settings, #credits {
   background: #2196F3;
-  /*opacity: 0.8;*/
-  display: none;
+  /*display: block;
   height: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -41,7 +36,11 @@ body {
   z-index: 900;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 0;*/
+}
+
+#picture .preview {
+  background: black;
 }
 
 #picture img {
@@ -85,7 +84,7 @@ body {
   line-height: 170px;
 }
 
-#picture .ui-btn {
+#picture .back-button {
   margin: 0 auto;
   background: red;
   color: white;
@@ -95,14 +94,16 @@ body {
   position: absolute;
   bottom: 22px;
   right: 23px;
-  width: 55px;
-  height: 55px;
+  height: 34px;
 }
 
-#main {
-  z-index: 20000;
-  display: block;
+#picture .ui-btn-icon-left:after {
+  left: 17px;
 }
+
+/*#main {
+  display: block;
+}*/
 
 #main .inner {
   width: 100%;
@@ -130,9 +131,14 @@ body {
   margin: 10px;
 }
 
-#settings {
-  background: lightgray;
+/*#credits {
+  z-index: 200000;
   display: none;
+}*/
+
+/*#settings {
+  background: lightgray;
+  display: block;
   height: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -143,11 +149,8 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 10000;
-  /*background: black;
-  color: white;*/
   width: 100%;
-}
+}*/
 
 .setting-button {
   height: 40px;
@@ -157,11 +160,11 @@ body {
   bottom: 26px;
 }
 
-.close-settings-button {
+/*.close-settings-button {
   float: right;
   display: inline;
   margin: 0 5px 7px 0;
-}
+}*/
 
 #settings .radios .title {
   margin: 5px;
