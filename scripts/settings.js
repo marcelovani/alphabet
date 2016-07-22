@@ -9,7 +9,7 @@ function Settings() {
 (function ($) {
   'use strict';
 
-$(document).ready(function () {
+  $(document).ready(function () {
 
     $('#select-language').change(function () {
 
@@ -48,10 +48,22 @@ $(document).ready(function () {
 
     $('#settings .back-button').touchstart(function () {
       // Save settings.
-      gGame.mainController.setLanguage($('#select-language').val());
-      gGame.mainController.setPerson($('#select-person').val());
-      gGame.setCharacters($('#select-characters').val());
+      localStorage.setItem("alphabet_language", $('#select-language').val());
+      localStorage.setItem("alphabet_person", $('#select-person').val());
+      localStorage.setItem("alphabet_characters", $('#select-characters').val());
     });
+
+    // Load saved options.
+    if (localStorage.alphabet_language) {
+      $('#select-language').val(localStorage.alphabet_language);
+    }
+    if (localStorage.alphabet_person) {
+      $('#select-language').change();
+      $('#select-person').val(localStorage.alphabet_person);
+    }
+    if (localStorage.alphabet_characters) {
+      $('#select-characters').val(localStorage.alphabet_characters);
+    }
   });
 
 })(jQuery);

@@ -150,13 +150,30 @@ Game.prototype.run = function() {
   var init = function () {
     $(document).ready(function () {
       var main = new Main();
-      main.setPerson('marc');
-      main.setLanguage('pt-BR');
+
+      if (localStorage.alphabet_person) {
+        main.setPerson(localStorage.alphabet_person);
+      }
+      else {
+        main.setPerson('marc');
+      }
+
+      if (localStorage.alphabet_language) {
+        main.setLanguage(localStorage.alphabet_language);
+      }
+      else {
+        main.setLanguage('pt-BR');
+      }
 
       var game = new Game(main);
-      game.setCharacters('letters');
+      if (localStorage.alphabet_characters) {
+        game.setCharacters(localStorage.alphabet_characters);
+      }
+      else {
+        game.setCharacters('letters');
+      }
+
       game.run();
-      gGame = game;
     });
   };
 
