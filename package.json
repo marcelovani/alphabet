@@ -1,0 +1,30 @@
+{
+    "name": "Alphabet",
+    "version": "1.0.0",
+    "description": "Alphabet for kids.",
+    "keywords": ["spell", "spelling", "letters", "alphabet", "learning"],
+    "repository": "https://github.com/marcelovani/alphabet",
+    "homepage": "https://marcelovani.github.io/alphabet/",
+    "author": "Marcelo Vani <marcellovani@yahoo.co.uk>",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-mobile/blob/1.4.5/MIT-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "=2.2.4",
+        "howler": ">=2.0.0",       
+        "flag-icon-css": ">=2.3.0",
+        "nodelint": "0.5.2"
+    },
+    "main": "index.html",
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "scripts": {
+        "prepublish": "npm prune",
+        "test": "make lint && make test"
+    }
+}
+
