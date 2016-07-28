@@ -28,10 +28,17 @@
 	<script src=./node_modules/jquery/dist/jquery.min.js></script>
 	<script src=./lib/jquery_mobile/jquery.mobile-1.4.5.min.js></script>
 	<script src=./node_modules/howler/dist/howler.min.js></script>
+	<script type="text/javascript">
+	  // Global variables.
+	  var character_touched = '';
+	</script>
+	<script src=./scripts/settings.js></script>
 	<script src=./scripts/main.min.js></script>
+	<script src=./scripts/play.js></script>
+	<script src=./scripts/sounds.js></script>
 </head>
 <body>
-<script>
+<script type="text/javascript">
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js', { scope: '/alphabet/' })
       .then(function(registration) {
@@ -44,19 +51,52 @@
   }
 </script>
 <div id="container" class="lang">
-	<div id="main">
-		<div class="inner">
+	<div id="main" data-role="page" class="type-interior ui-page ui-body-c ui-page-active" data-url="/" tabindex="0">
+		<div class="inner" data-role="main">
 			<span class="logo"><img src="images/touch/alphabet_256.png"/></span>
 			<div class="menu">
-				<a href="#" class="play-button" data-role="button" data-theme="e" data-inline="false">Play</a>
-				<a href="#" class="settings-button" data-role="button" data-theme="e" data-icon="gear" data-iconpos="right" data-inline="false">Settings</a>
+				<a href="#play" data-role="button" data-rel="settings" data-transition="slide" data-theme="e" data-inline="false" class="settings-button">Play</a>
+
+				<a href="#settings" data-role="button" data-rel="settings" data-transition="slide" data-theme="e" data-icon="gear" data-iconpos="right" data-inline="false" class="settings-button">Settings</a>
+
+				<a href="#credits" data-role="button" data-rel="settings" data-transition="slide" data-theme="e" data-icon="star" data-iconpos="right" data-inline="false" class="settings-button">Credits</a>
 			</div>
 		</div>
 	</div>
-	<div id="characters">
+	<div id="credits" data-role="credits" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
+		<div class="inner" data-role="main">
+		  <div data-role="header">
+		    <h1>Thanks to</h1>
+		 </div>
+		 <div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+			<h3>Voices (Portuguese)</h3>
+				<p>Bruna</p>
+				<p>Marcelo</p>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+			<h3>Voices (English)</h3>
+				<p>Joshua</p>
+				<p>Lisa</p>
+			</div>
+		</div>
+
+		 <div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <span>Joshua (voices en-GB)</span>
+		    <span>Marcelo (voices pt-BR)</span>
+		    <span>Bruna (voices pt-BR)</span>
+		    <span>Lisa (voices en-GB)</span>
+		</div>
+			<a href="#main" data-role="button" data-rel="settings" data-transition="slide" data-direction="reverse" data-theme="e" data-icon="arrow-l" data-iconpos="left" data-inline="false" class="back-button">Back</a>
+		</div>
 	</div>
-	<div id="picture">
-		<div class="picture-wrapper">
+	<div id="play" data-role="play" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
+		<div class="inner" data-role="main">
+		</div>
+ 	</div>
+	<div id="picture" data-role="picture" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
+		<div class="picture-wrapper" data-role="main">
 			<span class="preview"><img src=""/></span>
 			<span class="frame"><img src="images/frame-blue.png"/></span>
 		</div>
@@ -64,94 +104,35 @@
 			<span class="big-letter outline">A</span>
 			<span class="caption outline"></span>
 		</div>
-		<!-- <span class="character outline">X</span> -->
-		<button class="ui-btn ui-btn-corner-all back"><span>&larr;</span></button>
+		<a href="#play" data-role="button" data-rel="picture" data-transition="flip" data-theme="e" data-icon="back" data-iconpos="left" data-inline="true" class="back-button"></a>
 	</div>
-	<div id="settings">
-		<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
-			<div role="heading" class="ui-controlgroup-label">
-				<legend>Language:</legend>
+	<div id="settings" data-role="settings" data-url="/" tabindex="0" class="ui-page ui-body-c ui-overlay-a ui-dialog">
+		<div class="inner" data-role="main">
+			<div data-role="header">
+			  <h1>Settings</h1>
 			</div>
-			<div class="ui-controlgroup-controls ">
-				<div class="ui-radio">
-					<label for="language-pt-br" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="flag-icon flag-icon-br"></span>&nbsp;Portuguese - Brazil</label>
-					<input type="radio" name="language" id="language-pt-br" value="pt-BR" checked="checked">
-				</div>
-				<div class="ui-radio">
-					<label for="language-en-us" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="flag-icon flag-icon-us"></span>&nbsp;English - US</label>
-					<input type="radio" name="language" id="language-en-us" value="en-US">
-				</div>
-				<div class="ui-radio">
-					<label for="language-en-gb" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="flag-icon flag-icon-gb"></span>&nbsp;English - GB</label>
-					<input type="radio" name="language" id="language-en-gb" value="en-GB">
-				</div>
-				<div class="ui-radio">
-					<label for="language-es-es" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="flag-icon flag-icon-es"></span>&nbsp;Spanish - Spain</label>
-					<input type="radio" name="language" id="language-es-es" value="es-ES">
-				</div>
-			</div>
-		</fieldset>
 
-		<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
-			<div role="heading" class="ui-controlgroup-label">
-				<legend>Voice:</legend>
-			</div>
-			<div class="ui-controlgroup-controls ">
-				<div class="ui-radio">
-					<label for="voice-ann" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="ui-icon-user"></span>&nbsp;Ann</label>
-					<input type="radio" name="voice" id="voice-ann" value="ann" checked="checked">
-				</div>
-				<div class="ui-radio">
-					<label for="voice-john" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="ui-icon-user"></span>&nbsp;John</label>
-					<input type="radio" name="voice" id="voice-john" value="john">
-				</div>
-				<div class="ui-radio">
-					<label for="voice-joshua" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="ui-icon-user"></span>&nbsp;Joshua</label>
-					<input type="radio" name="voice" id="voice-joshua" value="joshua">
-				</div>
-				<div class="ui-radio">
-					<label for="voice-marc" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="ui-icon-user"></span>&nbsp;Marc</label>
-					<input type="radio" name="voice" id="voice-marc" value="marc">
-				</div>
-				<div class="ui-radio">
-					<label for="voice-bruna" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="ui-icon-user"></span>&nbsp;Bruna</label>
-					<input type="radio" name="voice" id="voice-bruna" value="bruna">
-				</div>
-				<div class="ui-radio">
-					<label for="voice-lisa" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class="ui-icon-user"></span>&nbsp;Lisa</label>
-					<input type="radio" name="voice" id="voice-lisa" value="lisa">
-				</div>
-			</div>
-		</fieldset>
+			<label for="select-language" class="select">Language:</label>
+			<select name="select-language" id="select-language" data-native-menu="true">
+			  <option value="en-GB">English - GB</option>
+			  <option value="pt-BR" selected="selected">Portuguese - Brazil</option>
+			  <option value="es-ES">Spanish - Spain</option>
+			</select>
 
-		<fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
-			<div role="heading" class="ui-controlgroup-label">
-				<legend>Characters:</legend>
-			</div>
-			<div class="ui-controlgroup-controls ">
-				<div class="ui-radio">
-					<label for="char-letters" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class=""></span>&nbsp;Letters</label>
-					<input type="radio" name="characters" id="char-letters" value="letters" checked="checked">
-				</div>
-				<div class="ui-radio">
-					<label for="char-numbers" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">
-						<span class=""></span>&nbsp;Numbers</label>
-					<input type="radio" name="characters" id="char-numbers" value="numbers">
-				</div>
-			</div>
-		</fieldset>
-		<span class="close-settings-button ui-btn ui-icon-check ui-btn-icon-left">Ok</span>
+			<label for="select-person" class="select">Voice:</label>
+			<select name="select-person" id="select-person" data-native-menu="true">
+			  <option value="bruna">Bruna</option>
+			  <option value="marcelo" selected="selected">Marcelo</option>
+			</select>
+
+			<label for="select-characters" class="select">Characters:</label>
+			<select name="select-characters" id="select-characters" data-native-menu="true">
+			  <option value="letters" selected="selected">Letters</option>
+			  <option value="numbers">Numbers</option>
+			</select>
+
+			<a href="#main" data-role="button" data-rel="settings" data-transition="slide" data-direction="reverse" data-theme="e" data-icon="check" data-iconpos="left" data-inline="false" class="back-button">Ok</a>
+		</div>
 	</div>
 </div>
 </body>
