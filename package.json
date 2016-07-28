@@ -14,7 +14,7 @@
     ],
     "dependencies": {
         "jquery": "=2.2.4",
-        "howler": ">=2.0.0",       
+        "howler": "=1.1.29",
         "flag-icon-css": ">=2.3.0",
         "nodelint": "0.5.2"
     },
